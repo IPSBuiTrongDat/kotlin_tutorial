@@ -42,6 +42,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ComposeQuadrantApp() {
+    /* スマホの画面で4つの画面をわけ、
+    * ４分の１の画面に別のコンテンツを表示する関数である。
+    * 具体的にはまず2つの行をわけ、
+    * 1行ごと2つの列にわける仕組み。*/
+
     Column(Modifier.fillMaxWidth()) {
         Row(Modifier.weight(1f)) {
             ComposableInfoCard(
@@ -81,6 +86,8 @@ private fun ComposableInfoCard(
     backgroundColor: Color,
     modifier: Modifier = Modifier
 ) {
+    /*
+    * 画面4分の一にコンテンツを表示するための関数。*/
     Column(
         modifier = modifier
             .fillMaxSize()
