@@ -50,7 +50,9 @@ class MainActivity : ComponentActivity() {
 
 
 /*
-* Diceの規則を設定する関数*/
+* Diceの表面を変える規則を設定する関数
+* */
+
 @Composable
 fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
     var result by remember { mutableStateOf(1) }
@@ -76,6 +78,10 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
     }
 }
 
+/*
+* プレビュー、
+* そしてmodifierの変数を設定するための関数
+* */
 @Composable
 @Preview
 private fun DiceRollerApp() {
